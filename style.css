@@ -1,5 +1,5 @@
 body {
-  background-image: url('./mel-usine.png');
+  background-image: url('public/mel-usine.png');
   background-position: center;
   background-size: cover;
   height: 100vh;
