@@ -1,6 +1,6 @@
 body {
   background-image: url('public/mel-usine.png');
-  background-position: center;
+  background-position: top center;
   background-repeat: no-repeat;
   background-size: cover;
   height: 100vh;
@@ -14,16 +14,16 @@ svg {
 
 .mel {
   position: absolute;
-  left: 0;
-  width: 130px;
+  left: 0px;
+  width: 100px;
   display: block;
   bottom: 50%
 }
 
 .usine {
   position: absolute;
-  right: 0;
-  width: 184px;
+  right: 0px;
+  width: 141px;
   display: block;
   bottom: 50%
 }
@@ -31,7 +31,7 @@ svg {
 p {
   font-family: 'Times New Roman', Times, serif;
   color: white;
-  font-size: 40px;
+  font-size: 32px;
 }
 
 .footer {
@@ -42,19 +42,26 @@ p {
   position: absolute;
   right: 0;
   bottom: 10%;
-  width: 100%;
+  width: 60%;
+  margin: 0 auto;
 }
 
 @media (min-width: 860px) {
   .mel {
+    left: 10px;
     width: 230px;
   }
 
   .usine {
+    right: 10px;
     width: 327px;
   }
 
   p {
     font-size: 60px;
+  }
+
+  .footer {
+    width: 50%;
   }
 }
