@@ -1,5 +1,5 @@
 body {
-  background-image: url('public/mel-usine.png');
+  background-image: url('public/mel-usine-bg.png');
   background-position: top center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -58,10 +58,10 @@ p {
   }
 
   p {
-    font-size: 60px;
+    font-size: 40px;
   }
 
   .footer {
-    width: 50%;
+    width: 40%;
   }
 }
