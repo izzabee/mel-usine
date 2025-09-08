@@ -1,10 +1,37 @@
-body {
-  background-image: url('public/mel-usine-bg.png');
-  background-position: top center;
+.home {
+  background-image: url('public/contact.jpg');
+  background-position: bottom 40% right 20%;
   background-repeat: no-repeat;
   background-size: cover;
   height: 100vh;
   width: 100vw;
+  opacity: 0;
+  transition: opacity 0.5s ease-in;
+  z-index: -1;
+}
+.black {
+  background-color: #DEDEDE;
+}
+
+
+/* When image is fully loaded */
+body.bg-loaded .home {
+  opacity: 1;
+}
+
+/* Hidden preloader image */
+img.preload {
+  display: none;
+}
+
+body {
+  margin: 0;
+}
+
+
+.about, .contact {
+  position: relative;
+  padding-bottom: 150px;
 }
 
 svg {
@@ -28,10 +55,9 @@ svg {
   bottom: 50%
 }
 
-p {
+* {
   font-family: 'Times New Roman', Times, serif;
-  color: white;
-  font-size: 32px;
+  box-sizing: border-box;
 }
 
 .footer {
@@ -41,12 +67,138 @@ p {
   left: 0;
   position: absolute;
   right: 0;
-  bottom: 10%;
+  bottom: 40px;
   width: 60%;
   margin: 0 auto;
 }
 
+.pad {
+  padding: 10px;
+}
+
+nav {
+  position: fixed;
+  left: 10px;
+  top: 10px;
+  font-size: 22px;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+li {
+  padding-bottom: 2px;
+}
+
+a {
+  color: black;
+  text-decoration: none;
+  transition: 0.5s all;
+}
+
+a:hover {
+  padding-left: 10px;
+}
+
+.footer svg * {
+  fill: black;
+}
+
+.inline {
+  display: flex;
+  gap: 2px;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.contact-info {
+  align-self: center;
+}
+
+.contact-photo {
+  margin-top: 1rem;
+}
+
+.contact-info p {
+  font-weight: bold;
+  margin: 1px 0;
+}
+
+.grid {
+  padding: 150px 10px 10px;
+}
+
+.tall {
+  height: 100vh;
+}
+
+.footer-locked svg {
+  width: 100%;
+  height: auto;
+  fill: black;
+}
+
+.footer-locked {
+  position: fixed;
+  bottom: 10px;
+  left: 10px;
+}
+
+figure {
+  margin: 0;
+}
+
+figcaption {
+  font-size: 12px;
+  margin-top: 0.5rem;
+  text-align: right;
+}
+
+img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.margin-bottom {
+  margin-bottom: 2rem;
+}
+
+.active {
+  position: relative;
+}
+
+.active:before {
+  content: "•";
+  margin-right: 10px;
+}
+
+.italic {
+  font-style: italic;
+}
+
+.coming-soon {
+  /* display: flex;
+  min-height: 50vh;
+  align-items: start;
+  flex-direction: column;
+  justify-content: center; */
+}
+
+.coming-soon h1,
+.coming-soon h2 {
+  font-weight: 200;
+  margin: 0;
+}
+
 @media (min-width: 860px) {
+  .home {
+    background-position: bottom 40% center;
+  }
+
   .mel {
     left: 10px;
     width: 230px;
@@ -57,11 +209,42 @@ p {
     width: 327px;
   }
 
-  p {
-    font-size: 40px;
+  .footer {
+    /* width: 20%; */
+    width: 400px;
   }
 
-  .footer {
-    width: 40%;
+  .footer svg {
+    fill: white;
+  }
+
+  .contact-info {
+    left: 30px;
+    width: 400px;
+  }
+
+  nav {
+    left: 30px;
+    top: 30px;
+  }
+
+  article.grid {
+    padding: 30px;
+  }
+
+  .grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+    width: 100%;
+  }
+
+  .footer-locked {
+    bottom: 30px;
+    left: 30px;
+  }
+
+  .pad {
+    padding: 30px;
   }
 }
