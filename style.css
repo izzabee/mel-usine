@@ -13,7 +13,6 @@
   background-color: #DEDEDE;
 }
 
-
 /* When image is fully loaded */
 body.bg-loaded .home {
   opacity: 1;
@@ -27,7 +26,6 @@ img.preload {
 body {
   margin: 0;
 }
-
 
 .about, .contact {
   position: relative;
@@ -249,5 +247,9 @@ img {
 
   .pad {
     padding: 30px;
+  }
+
+  .contact-photo {
+    margin-top: 0;
   }
 }
