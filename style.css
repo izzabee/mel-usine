@@ -102,6 +102,10 @@ a:hover {
   padding-left: 10px;
 }
 
+.active:hover {
+  padding-left: 0;
+}
+
 .footer svg * {
   fill: black;
 }
@@ -179,18 +183,22 @@ img {
   font-style: italic;
 }
 
-.coming-soon {
-  /* display: flex;
-  min-height: 50vh;
-  align-items: start;
-  flex-direction: column;
-  justify-content: center; */
+.coming-soon figure {
+  margin-bottom: 2rem;
 }
 
 .coming-soon h1,
 .coming-soon h2 {
   font-weight: 200;
   margin: 0;
+}
+
+.subnav {
+  display: block;
+  font-size: 18px;
+  text-transform: uppercase;
+  margin-top: 5px;
+  margin-left: 20px;
 }
 
 @media (min-width: 860px) {
