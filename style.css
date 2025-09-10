@@ -198,8 +198,7 @@ img {
   display: block;
   font-size: 18px;
   font-style: italic;
-  margin-top: 5px;
-  margin-left: 20px;
+  margin: 5px 20px 5px;
 }
 
 @media (min-width: 860px) {
