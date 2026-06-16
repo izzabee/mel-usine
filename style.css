@@ -135,7 +135,11 @@ a:hover {
 }
 
 .grid {
-  padding: 150px 10px 10px;
+  padding: 300px 10px 10px;
+}
+
+.press .grid {
+  padding: 300px 10px 10px;
 }
 
 .tall {
