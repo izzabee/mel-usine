@@ -109,6 +109,10 @@ a:hover {
   padding-left: 0;
 }
 
+.images:hover {
+  padding-left: 0;
+}
+
 .footer svg * {
   fill: black;
 }
@@ -135,10 +139,6 @@ a:hover {
 }
 
 .grid {
-  padding: 300px 10px 10px;
-}
-
-.press .grid {
   padding: 300px 10px 10px;
 }
 
@@ -220,6 +220,11 @@ img {
   padding-top: 1rem;
 }
 
+.images {
+  display: grid;
+  grid-gap: 0.5rem;
+}
+
 @media (min-width: 860px) {
   .home {
     background-position: bottom 40% right;
@@ -269,6 +274,7 @@ img {
     grid-template-columns: 1fr 1fr;
     gap: 20px;
     width: 100%;
+    padding: 150px 10px 10px;
   }
 
   .footer-locked {
